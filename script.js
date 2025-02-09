@@ -9,10 +9,10 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     
     // Convert formData to URL-encoded string
     const formParams = new URLSearchParams();
-    formParams.append('entry.2005620554', formData.get('Name:'));
-    formParams.append('entry.1045781291', formData.get('Email:'));
-    formParams.append('entry.1166974658', formData.get('Phone:'));
-    formParams.append('entry.839337160', formData.get('Message:'));
+    formParams.append('entry.2005620554', formData.get('entry.2005620554'));
+    formParams.append('entry.1045781291', formData.get('entry.1045781291'));
+    formParams.append('entry.1166974658', formData.get('entry.1166974658'));
+    formParams.append('entry.839337160', formData.get('entry.839337160'));
     // Add more form fields if necessary
 
     // Submit the form data using fetch API
