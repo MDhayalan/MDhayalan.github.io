@@ -4,25 +4,15 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     // Create a FormData object to hold the form data
     const formData = new FormData(this);
 
-    // Manually construct the Google Forms entry URL (Replace 'ENTRY_ID' with actual IDs)
-    const googleFormURL = 'https://docs.google.com/forms/d/1qI7DhJrzJptjRWfv9k77ImQrE5h8eeAbsy0EFg33dm8/formResponse';
-    
-    // Convert formData to URL-encoded string
-    const formParams = new URLSearchParams();
-    formParams.append('entry.2005620554', formData.get('entry.2005620554'));
-    formParams.append('entry.1045781291', formData.get('entry.1045781291'));
-    formParams.append('entry.1166974658', formData.get('entry.1166974658'));
-    formParams.append('entry.839337160', formData.get('entry.839337160'));
-    // Add more form fields if necessary
+    // Construct the Google Forms submission URL
+    const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSeVW4d4cyAXFG_exgz4r9S610RS4XZEB0-9yin01ha5Vx8umQ/viewform?usp=dialog';
+
 
     // Submit the form data using fetch API
     fetch(googleFormURL, {
         method: 'POST',
-        body: formParams.toString(),
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        mode: 'no-cors', // Required to bypass CORS restrictions
+        body: formData,
+        mode: 'no-cors', // Required to avoid CORS issues
     })
     .then(() => {
         alert('Form submitted successfully!');
@@ -51,4 +41,3 @@ document.addEventListener("DOMContentLoaded", function() {
     // Start the carousel
     setInterval(showNextImage, 2000); // Change image every 2 seconds
 });
-
