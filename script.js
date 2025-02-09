@@ -5,7 +5,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     const formData = new FormData(this);
 
     // Construct the Google Forms submission URL
-    const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSeVW4d4cyAXFG_exgz4r9S610RS4XZEB0-9yin01ha5Vx8umQ/viewform?usp=sharing';
+    const googleFormURL = 'https://forms.gle/uSHz4pvoUwEUfsz17';
 
 
     // Submit the form data using fetch API
