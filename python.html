@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhayalan's EDA - Python Projects</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Aptos, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
+            color: #f5f5f5;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #34495e;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .home-button {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 16px;
+            padding: 4px 6px;
+            background-color: transparent;
+            border: 1px solid #ecf0f1;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+
+        .home-button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .home-button:hover {
+            background-color: rgba(236, 240, 241, 0.2);
+            border-color: #1abc9c;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #ecf0f1;
+        }
+
+        /* Section Styling */
+        #projects {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #ecf0f1;
+        }
+
+        /* Project Grid */
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project {
+            flex: 1 1 calc(50% - 20px); /* Two columns with spacing */
+            max-width: 500px;
+            padding: 20px;
+            border: 1px solid #34495e;
+            border-radius: 10px;
+            background-color: #3b4b59;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            font-size: 22px;
+            color: #ecf0f1;
+        }
+
+        .project p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #dcdde1;
+            text-align: justify;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            background-color: #3498db;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project a:hover {
+            background-color: #1abc9c;
+        }
+
+        /* Responsive Layout - Single Column on Small Screens */
+        @media (max-width: 768px) {
+            .project {
+                flex: 1 1 100%;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="home-button">
+            <img src="assets/home2.png" alt="Home" class="nav-icon">
+        </a>
+        <h1>EDA - Python Projects</h1>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>ECommerce Data Analysis</h3>
+                <p>
+                    - Analyzed 1M transaction records using SQL & Python (Pandas, NumPy, Matplotlib, Seaborn).<br>
+                    - Conducted RFM analysis for customer segmentation (loyal, at-risk, lost customers), enabling targeted marketing.<br>
+                    - Implemented statistical tests (Chi-Square, Kruskal-Wallis, Shapiro-Wilk) to validate sales trends, payment method preferences, and customer purchasing behavior.<br>
+                    - Provided data-driven recommendations to increase revenue, optimize store performance & enhance product offerings.
+                </p>
+                <a href="https://github.com/MDhayalan/ECommerce-Data-Analysis" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project">
+                <h3>NYC Buildings Energy Consumption Survey</h3>
+                <p>
+                    - Conducted an in-depth analysis of energy consumption data for 13,223 buildings in New York City using Python.<br>
+                    - Identified patterns in energy consumption across building types and geographies, providing recommendations to improve energy efficiency.<br>
+                    - Created compelling visualizations using Matplotlib and Seaborn to communicate trends and findings effectively to a non-technical audience.<br>
+                    - Highlighted inefficiencies in energy use patterns, proposing optimization strategies for cost reduction and improved sustainability.
+                </p>
+                <a href="https://github.com/MDhayalan/New-York-City-Buildings-Energy-Consumption-Survey" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project">
+                <h3>Walmart – Confidence Interval & Central Limit Theorem Analysis</h3>
+                <p>
+                    - Data Analysis & Visualization: Conducted exploratory data analysis (EDA) on Walmart’s customer spending patterns using Python, Pandas, Matplotlib, and Seaborn.<br>
+                    - Statistical Modeling & Hypothesis Testing: Applied T-tests, Chi-Square tests, and Kruskal-Wallis tests to compare customer segments and validate statistical significance.<br>
+                    - Confidence Interval & Central Limit Theorem: Estimated 90%, 95%, and 99% confidence intervals to analyze spending behavior and leveraged CLT-based simulations for predictive insights.<br>
+                    - Business Insights & Decision Making: Identified key gender- and age-based spending trends, providing actionable recommendations for targeted promotions, inventory optimization, and pricing strategies.
+                </p>
+                <a href="https://github.com/MDhayalan/Walmart_confidence_interval_-_CLT.git" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
