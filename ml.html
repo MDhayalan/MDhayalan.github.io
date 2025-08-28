@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhayalan's ML Apps</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Aptos, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
+            color: #f5f5f5;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #34495e;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .home-button {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 16px;
+            padding: 4px 6px;
+            background-color: transparent;
+            border: 1px solid #ecf0f1;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+
+        .home-button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .home-button:hover {
+            background-color: rgba(236, 240, 241, 0.2);
+            border-color: #1abc9c;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #ecf0f1;
+        }
+
+        /* Section Styling */
+        #projects {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #ecf0f1;
+        }
+
+        /* Project Grid */
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project {
+            flex: 1 1 calc(50% - 20px); /* Two columns with spacing */
+            max-width: 500px;
+            padding: 20px;
+            border: 1px solid #34495e;
+            border-radius: 10px;
+            background-color: #3b4b59;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            font-size: 22px;
+            color: #ecf0f1;
+        }
+
+        .project p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #dcdde1;
+            text-align: justify;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            background-color: #3498db;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project a:hover {
+            background-color: #1abc9c;
+        }
+
+        /* Responsive Layout - Single Column on Small Screens */
+        @media (max-width: 768px) {
+            .project {
+                flex: 1 1 100%;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="home-button">
+            <img src="assets/home2.png" alt="Home" class="nav-icon">
+        </a>
+        <h1>Machine Learning Apps</h1>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Insurance Premium Predictor</h3>
+                <p>
+		    - This project leverages <b>machine learning regression models</b>—Linear Regression, Lasso Regression, Ridge Regression, Random Forest, XGBoost, and LightGBM—to <b>predict premium prices with higher accuracy</b>.<br><br>
+                    - Through hyperparameter tuning and cross-validation, we benchmarked their performance using the R² score, while feature importance analysis revealed the key drivers influencing outcomes.<br><br>
+		    - These insights not only help in choosing the <b>most reliable model</b> but also enable stakeholders to make <b>data-driven pricing decisions and strategic business improvements</b>.<br><br>
+                </p>
+                <a href="https://github.com/MDhayalan/Insurance_Premium_Price_Analysis_-_Prediction" target="_blank">View on GitHub</a>
+		<a href="https://insurancepremiumpriceanalysis-prediction-d8xzhs77kyoifuhk27yjb.streamlit.app/" target="_blank">Streamlit App</a>
+            </div>
+
+          </div>
+    </section>
+</body>
+</html>
