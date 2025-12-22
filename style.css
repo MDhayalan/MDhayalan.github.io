@@ -358,8 +358,8 @@ footer {
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
     padding: 20px;
-    width: 300px; /* Fixed width */
-    height: 300px; /* Make the card square */
+    width: 200px; /* Fixed width */
+    height: 200px; /* Make the card square */
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
     display: flex; /* Flexbox for aligning content */
@@ -375,8 +375,8 @@ footer {
 /* Image Carousel */
 .image-carousel {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     overflow: hidden; /* Hide overflowing images */
     border-radius: 10px; /* Rounded corners for the carousel */
     display: flex;
@@ -406,6 +406,67 @@ footer {
 .tableau-thumbnail:hover {
 
     transform: scale(1.05);
+}
+
+
+/* ===============================
+   CERTIFICATION SECTION
+================================ */
+
+#certification-section {
+    background-color: var(--section_background);
+    border-radius: 8px;
+    position: relative;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+/* Container for Certification Cards */
+.certification-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Individual Certification Card */
+.certification-card {
+    width: 350px;
+    height: auto;
+    padding: 16px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Certificate Image */
+.certification-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/* Certificate Title (optional) */
+.certification-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-sub);
+    line-height: 1.4;
+}
+
+/* Remove ALL transitions & animations */
+.certification-card,
+.certification-card img {
+    transition: none !important;
 }
 
 /*====================================================================*/
