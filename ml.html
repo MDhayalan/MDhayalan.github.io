@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhayalan's ML Apps</title>
+    <title>Dhayalan's ML Projects</title>
     <style>
         /* General Styling */
         body {
@@ -78,7 +78,7 @@
         .project {
             flex: 1 1 calc(50% - 20px); /* Two columns with spacing */
             max-width: 500px;
-            padding: 20px;
+            padding: 10px;
             border: 1px solid #34495e;
             border-radius: 10px;
             background-color: #3b4b59;
@@ -128,7 +128,7 @@
         <a href="index.html" class="home-button">
             <img src="assets/home2.png" alt="Home" class="nav-icon">
         </a>
-        <h1>Machine Learning Apps</h1>
+        <h1>Machine Learning Projects</h1>
     </header>
 
     <!-- Projects Section -->
@@ -138,15 +138,138 @@
             <div class="project">
                 <h3>Insurance Premium Predictor</h3>
                 <p>
-		    - This project leverages <b>machine learning regression models</b>—Linear Regression, Lasso Regression, Ridge Regression, Random Forest, XGBoost, and LightGBM—to <b>predict premium prices with higher accuracy</b>.<br><br>
-                    - Through hyperparameter tuning and cross-validation, we benchmarked their performance using the R² score, while feature importance analysis revealed the key drivers influencing outcomes.<br><br>
-		    - These insights not only help in choosing the <b>most reliable model</b> but also enable stakeholders to make <b>data-driven pricing decisions and strategic business improvements</b>.<br><br>
+<ul class="project-points">
+  <li>
+    This project leverages <b>machine learning regression models</b>—Linear Regression, Lasso Regression, Ridge Regression, Random Forest, XGBoost, and LightGBM—to <b>predict premium prices with higher accuracy</b>.
+  </li>
+
+  <li>
+    Through hyperparameter tuning and cross-validation, we benchmarked their performance using the R² score, while feature importance analysis revealed the key drivers influencing outcomes.
+  </li>
+
+  <li>
+    These insights not only help in choosing the <b>most reliable model</b> but also enable stakeholders to make <b>data-driven pricing decisions and strategic business improvements</b>.
+  </li>
+
+</ul>
                 </p>
-                <a href="https://github.com/MDhayalan/Insurance_Premium_Price_Analysis_-_Prediction" target="_blank">View on GitHub</a>
+                <a href="projects/ml/insurance/insurance_final.html" target="_blank">View Notebook</a>
 		<a href="https://insurancepremiumpriceanalysis-prediction-d8xzhs77kyoifuhk27yjb.streamlit.app/" target="_blank">Streamlit App</a>
             </div>
 
+          
+            <div class="project">
+                <h3>Delivery Time Prediction</h3>
+                <p>
+<ul class="project-points">
+  <li>
+   Built an <b>end-to-end machine learning regression model</b> to predict delivery time using 175k+ real-world orders, covering data cleaning, feature engineering, modeling, and evaluation.
+  </li>
+
+  <li>
+   Performed <b>deep EDA and statistical validation</b> (Kruskal-Wallis, Dunn post-hoc, Chi-square tests) to uncover time-of-day, market, and protocol-based delivery patterns.
+  </li>
+
+  <li>
+  Engineered impactful features from timestamps (delivery sessions, weekday/weekend) and handled outliers using the IQR method to improve model stability.
+  </li>
+
+  <li>
+  Trained and compared <b>Linear Regression, Random Forest, XGBoost, LightGBM and Neural Networks</b>, selecting <b>LightGBM</b> for its superior generalization.</b>
+  </li>
+
+  <li>
+  Achieved production-ready <b>performance with RMSE ≈ 1.27 minutes, MAE ≈ 1.14 minutes and R² ≈ 0.97</b>.
+  </li>
+
+</ul>
+		 </p>
+		  <a href="projects/ml/porter/porter.html" target="_blank">View Notebook</a>
+		
+		</div>
+
+
+<div class="project">
+                <h3>Scaler Clustering</h3>
+                <p>
+<ul class="project-points">
+  <li>
+    Built an <b>end-to-end unsupervised machine learning pipeline</b> to segment employees based on compensation patterns using <b>KMeans++ clustering</b>, enabling data-driven workforce and salary insights.
+  </li>
+
+  <li>
+    Performed extensive <b>data cleaning, outlier handling, and feature engineering</b> on large-scale salary data (~200K records), ensuring model stability and realistic cluster formation.
+  </li>
+
+  <li>
+    Improved clustering quality significantly by optimizing feature selection, achieving a <b>Silhouette Score of 0.81</b> through the use of <b>job position–level encoding</b> instead of broad job categories.
+  </li>
+
+  <li>
+    Identified and labeled three actionable employee segments — <b>Entry / Low CTC</b>, <b>Mid-level Professionals</b>, and <b>High Earners / Leaders</b> — providing clear business interpretation of compensation structures.
+  </li>
+
+  <li>
+    Designed the solution with <b>production readiness in mind</b>, including scalable preprocessing, clustering inference logic, and a clear path for <b>Flask-based deployment</b> for real-world usage.
+  </li>
+</ul>
+
+ </p>
+		  <a href="projects/ml/scaler/Scaler.html" target="_blank">View Notebook</a>
+		
+		</div>
+
+
+          
+            <div class="project">
+                <h3>OLA Drivers Churn Prediction</h3>
+                <p>
+<ul class="project-points">
+<li>
+    Developed an <strong>end-to-end ML churn prediction pipeline</strong> including data cleaning, EDA, feature engineering,
+    <strong>SMOTE class balancing</strong>, and robust model evaluation.
+  </li>
+
+  <li>
+    Trained and compared <strong>7 classification models</strong> (Logistic Regression, Random Forest, SVM, GBDT, XGBoost,
+    LightGBM) using cross-validation and hyperparameter tuning
+    (<strong>GridSearchCV &amp; RandomizedSearchCV</strong>).
+  </li>
+
+  <li>
+    Selected <strong>Gradient Boosting (GBDT)</strong> as the final model, achieving
+    <strong>Recall = 0.935</strong> and <strong>F1-score = 0.886</strong>, prioritizing churn detection accuracy.
+  </li>
+
+  <li>
+    Applied <strong>SHAP explainability</strong> to interpret model predictions and identify key churn drivers such as
+    <strong>low quarterly ratings, low business value, and driver grade</strong>.
+  </li>
+
+  <li>
+    Delivered <strong>actionable business recommendations</strong>, including performance-based incentives, rating system
+    improvements, and city-level retention strategies to reduce driver attrition.
+  </li>
+
+</ul>
+		 </p>
+                <a href="projects/ml/ola/ola.html" target="_blank">View Notebook</a>
+		</div>
+
           </div>
+
     </section>
 </body>
+
+<style>
+  .project-points {
+    text-align: justify;
+    line-height: 1.5;
+    padding-left: 20px;
+  }
+
+  .project-points li {
+    margin-bottom: 8px;
+  }
+</style>
 </html>
