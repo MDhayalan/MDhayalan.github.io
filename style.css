@@ -30,15 +30,15 @@ Dark chestnut brown, Burnt sienna, Soft cream: #46211A, #A43820, #F1D3B2;
 Dark charcoal, Deep rust, Sky blue: #2A3132, #763626, #90AFC5
 }
 :root {
-    --primary: #000000; #20948B;
-    --secondary: #CADCFC; #6AB187;
-    --optional: #A9A9A9;
+    --primary: #05026E; #20948B;
+    --secondary: #BFBBF0 ;
+    --optional: #000000;
     --background_color: linear-gradient(to bottom, var(--primary) 0%, var(--optional) 100%);
     --button_color: #FFD479; /* Color for all buttons */
     --section_background: var(--secondary);
     --navbar_background: var(--secondary);
     --header_color: var(--background_color);
-    --footer_color: #444;
+    --footer_color: #000000;
     --gray0: #000; /* Medium Grey */
     --gray1: #111; /* Medium Grey */
     --gray2: #222; /* Medium Grey */
